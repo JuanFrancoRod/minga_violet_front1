@@ -6,8 +6,11 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  console.log(apiUrl);
-  console.log(process.env.NODE_ENV);
+
+
+  console.log(apiUrl)
+  console.log(process.env.NODE_ENV)
+
   return (
     <>
       <div className="min-h-screen xsm:hidden">
