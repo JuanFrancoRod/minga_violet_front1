@@ -57,7 +57,7 @@ function App() {
                 src="/src/img/image3.png"
               ></img>
             </div>
-            <div className=" flex flex-col mb-16 w-88 sm1: flex flex-wrap">
+            <div className=" flex flex-col mb-16 w-88 sm1: flex-wrap">
               <h3 className="text-white text-2xl sm1:text-m">Shonen</h3>
               <p className="text-white text-xl sm1:text-xs ">
                 Is the manga tha is aimed at adolescent boys. They are series
