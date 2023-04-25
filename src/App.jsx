@@ -31,7 +31,7 @@ function App() {
               />
             </svg>
           </button>
-          <img src="../src/img/Logo.png" alt="logo" />
+          <img src="/img/Logo.png" alt="logo" />
         </div>
         {/*carrousel*/}
         <div className="flex justify-center mb-8 xsm:hidden ">
@@ -55,11 +55,11 @@ function App() {
             <div className="flex w-full justify-around">
               <img
                 className="self-center mb-4 h-64 w-64"
-                src="/src/img/8b8e139c764c05a681947b2d6855bd331.png"
+                src="/img/8b8e139c764c05a681947b2d6855bd331.png"
               ></img>
               <img
                 className="self-center h-60 w-68"
-                src="/src/img/image3.png"
+                src="/img/image3.png"
               ></img>
             </div>
             <div className=" flex flex-col mb-16 w-88 sm1: flex-wrap">
@@ -111,7 +111,7 @@ function App() {
         {/*footer*/}
         <div className="flex flex-col xsm:hidden ">
           <img
-            src="/src/img/Rectangle14.png"
+            src="/img/Rectangle14.png"
             alt=""
             className="self-center w-4/5 rounded-[50%_50%_48%52%/_0%_0%_100%_100%]"
           />
@@ -120,7 +120,7 @@ function App() {
               <button>Inicio</button>
               <button>Mangas</button>
             </div>
-            <img className="h-20" src="../src/img/Logo.png" alt="logo" />
+            <img className="h-20" src="/img/Logo.png" alt="logo" />
             <div className="w-40">
               <div className="flex justify-between">
                 <svg
@@ -209,7 +209,7 @@ function App() {
                 </svg>
               </div>
               <div>
-                <img className="xsm:w-12" src="/src/img/Logo.png" alt="logo" />
+                <img className="xsm:w-12" src="/img/Logo.png" alt="logo" />
               </div>
             </div>
           </div>
