@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "fondo-main": "url('/src/img/7d0eea20d6c53007b24b7e2c4342b819 1.png')",
-        "fondo-mobile": "url('src/img/fondomobile.png')",
+        "fondo-mobile": "url('/src/img/fondomobile.png')",
       },
     },
     variants: {},
