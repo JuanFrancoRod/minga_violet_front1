@@ -1,12 +1,11 @@
 import { useState } from "react";
 import apiUrl from "../api.js";
 import "./App.css";
-/* import Navbar from "./components/Navbar.jsx";
 
-import Footer from "./components/Footer.jsx"; */
 import Main from "./layouts/Main.jsx";
-
 import Index from "./pages/Index.jsx";
+import Footer from "./components/Footer.jsx";
+import Mobile from "./components/Mobile.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,14 +15,16 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen xsm:hidden">
+
+      <div className="min-h-screen ">
         <Main>
-          <Index/>
+          <Index />
+          <Mobile/>
         </Main>
       </div>
 
       {/*MOBILE*/}
-      <div className=" flex justify-center xsm:h-screen sm:hidden">
+      {/* <div className=" flex justify-center xsm:h-screen sm:hidden">
         <div className="xsm:bg-fondo-mobile xsm:w-full xsm:h-full xsm:bg-cover">
           <div className=" flex justify-center items-center h-20">
             <div className="flex w-full mx-4 justify-between">
@@ -58,13 +59,14 @@ function App() {
               </h4>
               <div className="xsm:self-center">
                 <button className="rounded-3xl bg-gradient-to-b from-[#F9A8D4] to-[#F472B6] h-10 w-60 text-white ">
-                  Exolire
+                  Explore
                 </button>
               </div>
+        
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

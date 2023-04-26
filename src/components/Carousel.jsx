@@ -1,16 +1,47 @@
-import React from 'react'
+
+import { useState, useEffect } from "react";
+import axios from "axios";
+import apiUrl from "../../api";
 
 export default function Carousel() {
+  useEffect(
+    () => {
+      axios(apiUrl + "categories")
+        .then((res) => setCategories(res.data.categories))
+        .catch((err) => console.log(err));
+    },
+    [] //Array de dependencia vacio porque ftecheamos una vez y esos datos luego no cambian
+  );
+  let [categories, setCategories] = useState([]);
+  console.log(categories);
+  let [counter, setCounter] = useState(0);
+  let sumar = () => {
+    setCounter(counter + 1);
+    if (counter === categories.length - 1) {
+      setCounter(0);
+    }
+  };
+  let restar = () => {
+    setCounter(counter - 1);
+    if (counter === 0) {
+      setCounter(categories.length - 1);
+    }
+  };
+console.log(categories[counter]?.name);
   return (
     <div className="flex justify-center mb-8 xsm:hidden ">
-      <div className="h-[25vh] bg-cover bg-gradient-to-b from-[#F9A8D4] to-[#F472B6] w-4/5 flex  items-end justify-around rounded-lg">
+      <div className="h-[25vh] bg-cover w-11/12 flex  items-end justify-around rounded-lg" style={{backgroundColor:categories[counter]?.color}}>
         <div className="w-10 self-center">
           <svg
+            onClick={restar}
+
             xmlns="http://www.w3.org/2000/svg"
             fill="#FFFFFF80"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="#333333"
+
+            stroke="currentColor"
+
             className="w-10 h-10 "
           >
             <path
@@ -22,27 +53,37 @@ export default function Carousel() {
         </div>
         <div className="flex w-full justify-around">
           <img
-            className="self-center mb-4 h-64 w-64"
-            src="/img/8b8e139c764c05a681947b2d6855bd331.png"
+
+            className="self-center mb-4 h-64 w-64 md:h-48 md:w-48"
+            src={categories[counter]?.character_photo}
           ></img>
-          <img className="self-center h-60 w-68" src="/img/image3.png"></img>
+          <img
+            className="self-center h-60 w-68 md:h-48 md:w-40"
+            src={categories[counter]?.cover_photo}
+          ></img>
         </div>
-        <div className=" flex flex-col mb-16 w-88 sm1: flex-wrap">
-          <h3 className="text-white text-2xl sm1:text-m">Shonen</h3>
-          <p className="text-white text-xl sm1:text-xs ">
-            Is the manga tha is aimed at adolescent boys. They are series with
-            large amounts of action, in wich humorous situations often occur.
-            The camaraderie between members of a collective or combat team
-            stands out.
+        <div className=" flex flex-col justify-center mb-12 w-3/4 md:pl-4 ">
+          <h3 className="text-white text-xl">
+            {`${categories[counter]?.name.charAt(0).toUpperCase()}${categories[counter]?.name.slice(1)}`}
+            
+          </h3>
+          <p className="text-white text-l md:text-sm ">
+            {categories[counter]?.description}
+
           </p>
         </div>
         <div className="w-10 self-center">
           <svg
+
+            onClick={sumar}
+
             xmlns="http://www.w3.org/2000/svg"
             fill="#FFFFFF80"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="#333333"
+
+            stroke="currentColor"
+
             className="w-10 h-10"
           >
             <path

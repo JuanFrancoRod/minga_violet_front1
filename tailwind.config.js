@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       screens: {
         xsm: { min: "320px", max: "639px" },
-        sm1: { min: "640px", max: "1427px" },
+        md: { min: "640px", max: "875px" },
+        // => @media (min-width: 768px) { ... }
       },
       backgroundImage: {
         "fondo-main": "url('/img/7d0eea20d6c53007b24b7e2c4342b819 1.png')",

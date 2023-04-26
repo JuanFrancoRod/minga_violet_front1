@@ -1,12 +1,16 @@
 import React from "react";
 import Carousel from "../components/Carousel.jsx";
 
+import Mobile from "../components/Mobile.jsx";
+
 export default function Index() {
     return (
       <>
         <Carousel />
         <div className="flex justify-center flex-column xsm:hidden">
-          <div className=" h-[53vh] m-8 bg-fondo-main bg-cover w-4/5 flex flex-col justify-center items-center">
+
+          <div className=" h-[53vh] m-8 bg-fondo-main bg-cover w-11/12 flex flex-col justify-center items-center">
+
             <div className="flex-column justify-center items-center">
               <h1 className="text-white text-6xl m-2">
                 {" "}
@@ -21,8 +25,11 @@ export default function Index() {
                 Sing in!
               </button>
             </div>
-          </div>
+
+                </div>
         </div>
+               
+
       </>
     );
 }
