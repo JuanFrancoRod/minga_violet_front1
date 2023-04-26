@@ -9,7 +9,9 @@ export default function Navbar() {
   }
 
   return (
-    <div className="w-screen h-[10vh] flex items-center">
+
+    <div className="w-screen h-[10vh]  flex items-center">
+
       {hide ? (
         <>
           <div className="absolute w-screen z-index:10 sm:w-[40%] h-[100vh] mt-[-10px]  self-start z-10 bg-gradient-to-b from-[#F9A8D4] to-[#F472B6] flex flex-col justify-start items-center">

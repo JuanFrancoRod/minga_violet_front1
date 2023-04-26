@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 
-
 export default function Main(props) {
   return (
     <>
@@ -14,7 +13,9 @@ export default function Main(props) {
         {props.children}
         {/*carrousel*/}
               {/*main*/}
-        <Footer />
+
+              <Footer  />
+
         {/*footer*/}
       </div>
     </>

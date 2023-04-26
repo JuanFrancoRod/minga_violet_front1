@@ -1,7 +1,8 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
-import apiUrl from "../../api";
+import apiUrl from "../../api.js";
+
 
 export default function Carousel() {
   useEffect(
