@@ -7,12 +7,15 @@ export default function Main(props) {
   return (
     <>
       <div className="min-h-screen ">
+
         <Navbar />
         {/* nav */}
         {props.children}
         {/*carrousel*/}
               {/*main*/}
+
               <Footer  />
+
         {/*footer*/}
       </div>
     </>
