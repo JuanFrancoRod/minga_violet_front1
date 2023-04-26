@@ -3,7 +3,6 @@ import apiUrl from "../api.js";
 import "./App.css";
 
 import Main from "./layouts/Main.jsx";
-
 import Index from "./pages/Index.jsx";
 import Footer from "./components/Footer.jsx";
 import Mobile from "./components/Mobile.jsx";
@@ -16,6 +15,7 @@ function App() {
 
   return (
     <>
+
       <div className="min-h-screen ">
         <Main>
           <Index />

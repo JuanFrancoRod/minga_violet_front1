@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 import apiUrl from "../../api";
@@ -33,11 +34,14 @@ console.log(categories[counter]?.name);
         <div className="w-10 self-center">
           <svg
             onClick={restar}
+
             xmlns="http://www.w3.org/2000/svg"
             fill="#FFFFFF80"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
+
             stroke="currentColor"
+
             className="w-10 h-10 "
           >
             <path
@@ -49,6 +53,7 @@ console.log(categories[counter]?.name);
         </div>
         <div className="flex w-full justify-around">
           <img
+
             className="self-center mb-4 h-64 w-64 md:h-48 md:w-48"
             src={categories[counter]?.character_photo}
           ></img>
@@ -64,16 +69,21 @@ console.log(categories[counter]?.name);
           </h3>
           <p className="text-white text-l md:text-sm ">
             {categories[counter]?.description}
+
           </p>
         </div>
         <div className="w-10 self-center">
           <svg
+
             onClick={sumar}
+
             xmlns="http://www.w3.org/2000/svg"
             fill="#FFFFFF80"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
+
             stroke="currentColor"
+
             className="w-10 h-10"
           >
             <path
