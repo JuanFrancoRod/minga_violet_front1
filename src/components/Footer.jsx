@@ -2,11 +2,13 @@
 
 export default function Footer() {
   return (
+
     <div className="flex flex-col  ">
       <img
         src="/img/Rectangle14.png"
         alt=""
         className="self-center w-11/12 rounded-[50%_50%_48%52%/_0%_0%_100%_100%]"
+
       />
       <div className="flex justify-around mt-8 mr-8 ml-8 p-8">
         <div className="flex gap-12 ">

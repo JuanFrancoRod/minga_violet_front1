@@ -1,6 +1,12 @@
 import { useState } from "react";
 import apiUrl from "../api.js";
 import "./App.css";
+/* import Navbar from "./components/Navbar.jsx";
+
+import Footer from "./components/Footer.jsx"; */
+import Main from "./layouts/Main.jsx";
+
+import Index from "./pages/Index.jsx";
 
 import Main from "./layouts/Main.jsx";
 
@@ -16,10 +22,12 @@ function App() {
 
   return (
     <>
+
       <div className="min-h-screen ">
         <Main>
           <Index />
           <Mobile/>
+
         </Main>
       </div>
 
