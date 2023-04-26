@@ -12,7 +12,7 @@ export default function Main(props) {
         {props.children}
         {/*carrousel*/}
               {/*main*/}
-        <Footer />
+              <Footer  />
         {/*footer*/}
       </div>
     </>
