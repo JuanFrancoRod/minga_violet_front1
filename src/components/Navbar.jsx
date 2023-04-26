@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div className="h-[10vh] p-4  bg-white flex justify-between mb-8 mr-44 ml-44 xsm:hidden">
+    <div className="h-[10vh] p-4  bg-white flex justify-between mb-8 mr-20 ml-20 xsm:hidden">
       <button className="bg-slate-800 text-gray-50">
         <svg
           xmlns="http://www.w3.org/2000/svg"
